@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.CourseAdvisor" parent="Base.Theme.CourseAdvisor" />
+    <style name="Theme.CourseAdvisor" parent="Base.Theme.CourseAdvisor">
+        <item name="android:statusBarColor" >@color/sabanci_blue</item>
+    </style>
 </resources>
