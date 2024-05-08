@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:id="@+id/courseBackground"
+    android:orientation="vertical"
+    android:background="@drawable/course_background"
+    android:gravity="center_vertical"
+    android:layout_margin="1dp"
+    android:backgroundTint="@color/dark_gray">
+
+    <TextView
+        android:id="@+id/courseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="11sp"
+        android:paddingStart="2dp"
+        />
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="11sp"
+        android:paddingStart="2dp"
+        />
+
+</LinearLayout>

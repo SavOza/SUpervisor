@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CourseTextsView">
+        <attr name="courseText" format="string"/>
+        <attr name="classText" format="string"/>
+        <attr name="bgColor" format="color"/>
+    </declare-styleable>
+</resources>

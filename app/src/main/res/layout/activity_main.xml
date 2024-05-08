@@ -72,6 +72,7 @@
             android:layout_weight="1">
 
             <GridLayout
+                android:id="@+id/main_grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
@@ -150,53 +151,53 @@
                     android:text="8.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -212,53 +213,53 @@
                     android:text="9.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -274,8 +275,8 @@
                     android:text="10.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:orientation="vertical"
                     android:background="@color/light_gray"
                     android:layout_margin="0.5dp"
@@ -284,43 +285,43 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -336,53 +337,53 @@
                     android:text="11.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -398,53 +399,53 @@
                     android:text="12.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -460,53 +461,53 @@
                     android:text="13.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -522,53 +523,53 @@
                     android:text="14.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -584,53 +585,53 @@
                     android:text="15.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -646,53 +647,53 @@
                     android:text="16.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -708,13 +709,33 @@
                     android:text="17.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/dark_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
@@ -725,36 +746,17 @@
                     android:layout_margin="0.5dp"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1">
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/dark_gray"
+                    android:layout_columnWeight="1"
                     android:layout_margin="0.5dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:background="@color/dark_gray"
-                    android:layout_margin="0.5dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <TextView
@@ -770,53 +772,53 @@
                     android:text="18.40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/light_gray"
-                    android:layout_margin="0.5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_rowWeight="1"
-                    android:layout_columnWeight="1">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical">
                 </LinearLayout>
             </GridLayout>
         </ScrollView>
