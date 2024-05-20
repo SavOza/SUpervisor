@@ -13,7 +13,7 @@ class CourseTextsView @JvmOverloads constructor(context: Context, attrs: Attribu
     private val courseBackground: LinearLayout
 
     init {
-        inflate(context, R.layout.course_texts_view, this)
+        inflate(context, R.layout.view_course_texts, this)
         textCourse = findViewById(R.id.courseTextView)
         textClass = findViewById(R.id.classTextView)
         courseBackground = findViewById(R.id.courseBackground)
@@ -46,8 +46,8 @@ class CourseTextsView @JvmOverloads constructor(context: Context, attrs: Attribu
         this.textClass.text = str
     }
 
-    fun setBackground(str: Int) {
-        this.courseBackground.background.setTint(str)
+    fun setBackground(clr: Int) {
+        this.courseBackground.background.setTint(clr)
     }
 
 }

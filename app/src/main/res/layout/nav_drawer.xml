@@ -16,6 +16,7 @@
         android:background="@color/sabanci_blue">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -25,6 +26,24 @@
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/item_searchbarbackground"
+            android:hint="Search..."
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_advancedfilter"
@@ -46,90 +65,7 @@
         android:orientation="vertical"
         android:gravity="top"
         android:background="@color/background_black"
-        android:padding="10dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Row number"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:visibility="gone"
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Column number"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <Spinner
-                android:visibility="gone"
-                android:id="@+id/rowSpinner"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:spinnerMode="dropdown"
-                android:background="@color/white"
-                android:entries="@array/rows_array"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-            <Spinner
-                android:visibility="gone"
-                android:id="@+id/colSpinner"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@color/white"
-                android:spinnerMode="dropdown"
-                android:entries="@array/cols_array"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_addcourse"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="76dp"
-                android:background="@drawable/button_advancedbackground"
-                android:backgroundTint="@color/sabanci_blue"
-                android:text="Network Call"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.933"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/inputText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:ellipsize="end"
-                android:ems="10"
-                android:hint="Input date (ex. 202302)"
-                android:inputType="text"
-                android:textColor="@color/white"
-                android:textColorHint="@color/light_gray"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        android:padding="6dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recView"
