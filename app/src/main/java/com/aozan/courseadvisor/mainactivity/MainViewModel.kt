@@ -63,7 +63,7 @@ class MainViewModel: ViewModel() {
             }
 
 
-            val theNewSection = Section(sectionCode, crn)
+            val theNewSection = Section(sectionCode, crn, courseCode)
 
             var tableElements = courseElements.parents().parents().next()[index].select("table.datadisplaytable tr:has(td)")
             while(tableElements.isEmpty()) { //Due to some errors, some may have empty elements that need to be skipped over. Increase index and try the next one
@@ -80,7 +80,6 @@ class MainViewModel: ViewModel() {
                 val unparsedLocation = tableElem.select("td:nth-of-type(4)").text()
                 val location = parseLocation(unparsedLocation)
                 lecturer = tableElem.select("td:nth-of-type(7)").text()
-                Log.d("LOCATION", location)
                 val day = dayMap.getOrDefault(dayUnformatted, "TBA")
 
                 if (theNewSection.lecturer == null) {

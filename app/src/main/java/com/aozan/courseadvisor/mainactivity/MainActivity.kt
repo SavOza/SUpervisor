@@ -2,6 +2,7 @@ package com.aozan.courseadvisor.mainactivity
 
 import android.content.Intent
 import android.content.res.Resources
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -25,6 +26,7 @@ import com.aozan.courseadvisor.model.Section
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
+import kotlin.random.Random
 
 
 class MainActivity : AppCompatActivity() {
@@ -47,6 +49,17 @@ class MainActivity : AppCompatActivity() {
         "THU" to 3,
         "FRI" to 4
     )
+
+    private val backgroundColors = listOf(
+        "#8A2BE2", "#A52A2A", "#5F9EA0", "#D2691E", "#FF7F50", "#00008B",
+        "#008B8B", "#B8860B", "#006400", "#8B008B", "#FF8C00", "#8B0000",
+        "#483D8B", "#9400D3", "#FF1493", "#00BFFF", "#228B22", "#DAA520",
+        "#4B0082", "#800000", "#BA55D3", "#3CB371", "#7B68EE", "#C71585",
+        "#191970", "#FF4500", "#CD853F", "#800080", "#4169E1", "#8B4513",
+        "#2E8B57", "#A0522D", "#6A5ACD", "#4682B4", "#D2B48C", "#008080",
+        "#40E0D0", "#EE82EE", "#9ACD32"
+    )
+
 
     private val viewsList: MutableMap<String, MutableSet<CourseTextsView>> = mutableMapOf()
     private val courseColors: MutableMap<String, Int> = mutableMapOf()
@@ -92,9 +105,22 @@ class MainActivity : AppCompatActivity() {
             val row_indexes = (startIdx..endIdx).toList()
             val col_index = dayToIdx[lesson.day]
 
+            val fullSectionName = section.fullSectionName
+            val sectionCode = section.sectionCode
+            val viewName = "$fullSectionName-$sectionCode"
 
             for (row in row_indexes) {
-                addItemToCell(section.crn, section.courseCode, lesson.location, R.color.sabanci_blue, row, col_index!!)
+                var theColor: Int = 0
+                Log.d("COURSECODE", section.courseCode)
+                if (courseColors.contains(section.courseCode)) {
+                    theColor = courseColors[section.courseCode]!!
+                }
+                else {
+                    theColor = Random.nextInt(backgroundColors.size)
+                    courseColors[section.courseCode] = theColor
+                }
+
+                addItemToCell(section.crn, viewName.trim(), lesson.location.trim(), backgroundColors[theColor], row, col_index!!)
             }
         }
     }
@@ -157,13 +183,13 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    private fun addItemToCell(crn: String, courseName: String, className: String, color: Int, rowNo: Int, colNo: Int) {
+    private fun addItemToCell(crn: String, courseName: String, className: String, color: String, rowNo: Int, colNo: Int) {
         val index = 6 * (rowNo + 1) + (colNo + 1)
 
         val myNewView: CourseTextsView = CourseTextsView(this)
         myNewView.setCourseName(courseName)
         myNewView.setClassName(className)
-        myNewView.setBackground(color)
+        myNewView.setBackground(Color.parseColor(color))
 
 
         val theLinearLayout: LinearLayout? = binding.mainGrid.getChildAt(index) as? LinearLayout

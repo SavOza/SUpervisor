@@ -1,6 +1,6 @@
 package com.aozan.courseadvisor.model
 
-class Section (val sectionCode: String, val crn: String, var isToggled: Boolean = false) {
+class Section (val sectionCode: String, val crn: String, var fullSectionName: String, var isToggled: Boolean = false) {
     private val _lessons = mutableListOf<Lesson>()
     var courseCode: String = ""
 
