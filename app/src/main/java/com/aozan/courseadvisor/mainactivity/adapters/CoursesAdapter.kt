@@ -3,14 +3,11 @@ package com.aozan.courseadvisor.mainactivity.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.aozan.courseadvisor.R
 import com.aozan.courseadvisor.databinding.ItemCourseBinding
 import com.aozan.courseadvisor.databinding.ItemCourseExpandedBinding
 import com.aozan.courseadvisor.databinding.ViewSectionsListBinding
-import com.aozan.courseadvisor.misc.LessonSectionView
 import com.aozan.courseadvisor.model.Course
 import com.aozan.courseadvisor.model.Section
 
@@ -102,7 +99,6 @@ class CoursesAdapter(private var dataList: List<Course>, private var itemClickCa
     fun updateData(dataList: List<Course>) {
         this.dataList = dataList
         filter(filterText)
-        notifyDataSetChanged()
     }
     override fun getItemCount() = filteredList.size
 

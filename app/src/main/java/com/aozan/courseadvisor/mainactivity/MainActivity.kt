@@ -1,5 +1,6 @@
 package com.aozan.courseadvisor.mainactivity
 
+import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import android.graphics.Color
@@ -16,7 +17,6 @@ import androidx.core.view.GravityCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.aozan.courseadvisor.R
 import com.aozan.courseadvisor.databinding.ActivityMainBinding
 import com.aozan.courseadvisor.gradreqactivity.GradReqActivity
 import com.aozan.courseadvisor.mainactivity.adapters.CoursesAdapter
@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     private val viewsList: MutableMap<String, MutableSet<CourseTextsView>> = mutableMapOf()
     private val courseColors: MutableMap<String, Int> = mutableMapOf()
+    private val scheduledCourses: MutableList<String> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -109,9 +110,13 @@ class MainActivity : AppCompatActivity() {
             val sectionCode = section.sectionCode
             val viewName = "$fullSectionName-$sectionCode"
 
+            // For importing schedule to grad requirements, this will be saved to sharedpref
+            if (!scheduledCourses.contains(section.courseCode)) {
+                scheduledCourses.add(section.courseCode)
+            }
+
             for (row in row_indexes) {
                 var theColor: Int = 0
-                Log.d("COURSECODE", section.courseCode)
                 if (courseColors.contains(section.courseCode)) {
                     theColor = courseColors[section.courseCode]!!
                 }
@@ -181,8 +186,6 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-
-
     private fun addItemToCell(crn: String, courseName: String, className: String, color: String, rowNo: Int, colNo: Int) {
         val index = 6 * (rowNo + 1) + (colNo + 1)
 
@@ -231,5 +234,17 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         mainScope.cancel()
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        val sharedPrefs = getSharedPreferences("courseAdvisorSharedPref", Context.MODE_PRIVATE)
+        val editor = sharedPrefs.edit()
+
+        val scheduledSet = scheduledCourses.toSet()
+
+        editor.putStringSet("scheduledCourses", scheduledSet)
+        editor.apply()
     }
 }

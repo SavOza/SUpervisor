@@ -32,6 +32,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
@@ -40,14 +41,14 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_importsched"
-            android:layout_width="170dp"
+            android:layout_width="160dp"
             android:layout_height="50dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/button_advancedbackground"
             android:text="Import Schedule"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <View
             android:layout_width="0dp"
@@ -56,26 +57,23 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_addcourse"
-            android:layout_width="170dp"
+            android:layout_width="160dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/button_advancedbackground"
             android:text="Add Course"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="236dp"
-        android:text="EDIT COURSE ACTIVITY"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/editCourseRecView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

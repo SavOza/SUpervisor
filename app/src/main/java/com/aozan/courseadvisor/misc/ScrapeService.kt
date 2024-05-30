@@ -1,6 +1,5 @@
 package com.aozan.courseadvisor.misc
 
-import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup

@@ -2,9 +2,7 @@ package com.aozan.courseadvisor.addfilteractivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.aozan.courseadvisor.R
 import com.aozan.courseadvisor.databinding.ActivityAddFilterBinding
-import com.aozan.courseadvisor.databinding.ActivityGradReqBinding
 
 class AddFilterActivity : AppCompatActivity() {
 

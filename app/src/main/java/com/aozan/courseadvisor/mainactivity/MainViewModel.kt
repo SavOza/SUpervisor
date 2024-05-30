@@ -1,12 +1,10 @@
 package com.aozan.courseadvisor.mainactivity
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.aozan.courseadvisor.misc.ScrapeService
 import com.aozan.courseadvisor.model.Course
 import com.aozan.courseadvisor.model.Lesson
 import com.aozan.courseadvisor.model.Section
-import kotlinx.coroutines.delay
 import org.jsoup.nodes.Document
 
 class MainViewModel: ViewModel() {

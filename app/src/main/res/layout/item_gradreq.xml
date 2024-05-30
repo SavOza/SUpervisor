@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/item_coursebackground">
+
+    <TextView
+        android:id="@+id/programName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="MAJOR - Computer Science and Engineering"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Taken"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Required"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/uc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="University Courses"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/ucTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/ucReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Required Courses"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/rcTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/rcReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ce"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Core Elective Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/ceTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/ceReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ae"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Area Elective Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/aeTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/aeReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Free Elective Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/feTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/feReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fac"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Faculty Courses"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/facTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/facReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sci"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Basic Science Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/sciTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/sciReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/eng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Engineering Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/engTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/engReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/su"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="SU Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/suTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/suReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ects"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="ECTS Credits"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/ectsTaken"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/ectsReq"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>
